@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_elements_containers",
+  "info": {
+    "displayName": "Container",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "buttons": {
+      "type": "component",
+      "component": "elements.button",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
