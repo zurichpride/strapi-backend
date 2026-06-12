@@ -41,7 +41,8 @@
         }
       },
       "components": [
-        "elements.container"
+        "elements.container",
+        "elements.hero"
       ],
       "required": true
     }

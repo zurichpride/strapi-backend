@@ -51,6 +51,16 @@
         "videos",
         "audios"
       ]
+    },
+    "links": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "component": "elements.links",
+      "repeatable": false
     }
   }
 }

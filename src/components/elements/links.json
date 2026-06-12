@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_elements_links",
+  "info": {
+    "displayName": "Links",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "website": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "googleMaps": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "youtube": {
+      "type": "string"
+    },
+    "tiktok": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

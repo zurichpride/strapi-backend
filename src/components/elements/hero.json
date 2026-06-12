@@ -1,20 +1,17 @@
 {
-  "collectionName": "components_elements_containers",
+  "collectionName": "components_elements_heroes",
   "info": {
-    "displayName": "Section",
-    "icon": "layout"
+    "displayName": "Hero",
+    "icon": "star"
   },
   "options": {},
   "attributes": {
-    "subtitle": {
+    "title": {
       "type": "string"
     },
-    "title": {
+    "subtitle": {
       "type": "string",
       "required": true
-    },
-    "content": {
-      "type": "blocks"
     },
     "media": {
       "type": "media",
@@ -25,11 +22,6 @@
         "videos",
         "audios"
       ]
-    },
-    "buttons": {
-      "type": "component",
-      "component": "elements.button",
-      "repeatable": true
     }
   },
   "config": {}

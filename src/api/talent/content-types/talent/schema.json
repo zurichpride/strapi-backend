@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "events",
+  "collectionName": "talents",
   "info": {
-    "singularName": "event",
-    "pluralName": "events",
-    "displayName": "Event"
+    "singularName": "talent",
+    "pluralName": "talents",
+    "displayName": "Talent"
   },
   "options": {
     "draftAndPublish": true
@@ -17,11 +17,6 @@
   "attributes": {
     "slug": {
       "type": "uid",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
       "required": true
     },
     "name": {
@@ -32,22 +27,6 @@
         }
       },
       "required": true
-    },
-    "start": {
-      "type": "datetime",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
-    },
-    "end": {
-      "type": "datetime",
-      "pluginOptions": {
-        "i18n": {
-          "localized": false
-        }
-      }
     },
     "description": {
       "type": "blocks",
@@ -65,6 +44,7 @@
         }
       },
       "multiple": true,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
@@ -76,23 +56,17 @@
       "type": "component",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "component": "elements.links",
       "repeatable": false
     },
-    "locations": {
+    "events": {
       "type": "relation",
       "relation": "manyToMany",
-      "target": "api::location.location",
-      "inversedBy": "events"
-    },
-    "talents": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::talent.talent",
-      "mappedBy": "events"
+      "target": "api::event.event",
+      "inversedBy": "talents"
     }
   }
 }

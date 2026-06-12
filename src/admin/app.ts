@@ -1,7 +1,15 @@
 import type { StrapiApp } from '@strapi/strapi/admin';
 
+import Logo from "./extensions/logo.svg";
+
 export default {
   config: {
+    auth: {
+      logo: Logo,
+    },
+    menu: {
+      logo: Logo,
+    },
     locales: [
       // 'ar',
       // 'fr',
