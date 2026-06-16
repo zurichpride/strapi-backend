@@ -26,6 +26,9 @@
     },
     "facebook": {
       "type": "string"
+    },
+    "soundcloud": {
+      "type": "string"
     }
   },
   "config": {}

@@ -17,6 +17,7 @@
   "attributes": {
     "slug": {
       "type": "uid",
+      "targetField": "name",
       "required": true
     },
     "name": {
@@ -44,7 +45,7 @@
         }
       },
       "multiple": true,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
@@ -56,7 +57,7 @@
       "type": "component",
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "component": "elements.links",

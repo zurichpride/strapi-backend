@@ -1,22 +1,23 @@
 {
-  "collectionName": "components_elements_heroes",
+  "collectionName": "components_elements_boxes",
   "info": {
-    "displayName": "Hero",
-    "icon": "star"
+    "displayName": "Box",
+    "icon": "stack"
   },
   "options": {},
   "attributes": {
+    "link": {
+      "type": "string"
+    },
     "title": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "subtitle": {
-      "type": "string",
-      "required": false
+      "type": "string"
     },
     "media": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "allowedTypes": [
         "images",
         "files",

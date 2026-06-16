@@ -17,6 +17,7 @@
   "attributes": {
     "slug": {
       "type": "uid",
+      "targetField": "name",
       "required": true
     },
     "name": {
@@ -38,6 +39,11 @@
     },
     "media": {
       "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "multiple": true,
       "allowedTypes": [
         "images",

@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_grids",
+  "info": {
+    "displayName": "Grid",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "boxes": {
+      "type": "component",
+      "component": "elements.box",
+      "repeatable": true
+    },
+    "embeds": {
+      "type": "component",
+      "component": "elements.embed",
+      "repeatable": true
+    },
+    "media": {
+      "type": "component",
+      "component": "elements.media",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

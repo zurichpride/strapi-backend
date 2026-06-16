@@ -6,11 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "content": {
+    "link": {
       "type": "string",
       "required": true
     },
-    "link": {
+    "content": {
       "type": "string",
       "required": true
     }

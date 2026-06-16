@@ -22,10 +22,16 @@
           "localized": true
         }
       },
+      "targetField": "name",
       "required": true
     },
     "name": {
       "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "required": true
     },
     "description": {
@@ -41,7 +47,7 @@
       "type": "media",
       "pluginOptions": {
         "i18n": {
-          "localized": false
+          "localized": true
         }
       },
       "multiple": true,

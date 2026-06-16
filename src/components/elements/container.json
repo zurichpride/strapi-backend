@@ -6,12 +6,12 @@
   },
   "options": {},
   "attributes": {
-    "subtitle": {
-      "type": "string"
-    },
     "title": {
       "type": "string",
       "required": true
+    },
+    "subtitle": {
+      "type": "string"
     },
     "content": {
       "type": "blocks"
@@ -25,6 +25,11 @@
         "videos",
         "audios"
       ]
+    },
+    "grid": {
+      "type": "component",
+      "component": "elements.grid",
+      "repeatable": false
     },
     "buttons": {
       "type": "component",

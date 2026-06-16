@@ -1,19 +1,11 @@
 {
-  "collectionName": "components_elements_heroes",
+  "collectionName": "components_elements_media",
   "info": {
-    "displayName": "Hero",
-    "icon": "star"
+    "displayName": "Media",
+    "icon": "picture"
   },
   "options": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
-    "subtitle": {
-      "type": "string",
-      "required": false
-    },
     "media": {
       "type": "media",
       "multiple": true,
