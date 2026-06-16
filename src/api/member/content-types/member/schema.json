@@ -28,6 +28,14 @@
         "they/them"
       ]
     },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Geschäftsstelle",
+        "Vorstand",
+        "Organisationskomitee"
+      ]
+    },
     "team": {
       "type": "enumeration",
       "enum": [
@@ -39,14 +47,6 @@
         "Politik",
         "Finanzen",
         "Kommunikation"
-      ]
-    },
-    "type": {
-      "type": "enumeration",
-      "enum": [
-        "Geschäftsstelle",
-        "Vorstand",
-        "Organisationskomitee"
       ]
     },
     "function": {

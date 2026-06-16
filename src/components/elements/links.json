@@ -6,11 +6,11 @@
   },
   "options": {},
   "attributes": {
-    "website": {
-      "type": "string"
-    },
     "email": {
       "type": "email"
+    },
+    "website": {
+      "type": "string"
     },
     "googleMaps": {
       "type": "string"

@@ -22,10 +22,9 @@
           "localized": true
         }
       },
-      "targetField": "title",
       "required": true
     },
-    "title": {
+    "name": {
       "type": "string",
       "pluginOptions": {
         "i18n": {

@@ -7,8 +7,8 @@ export interface ElementsBox extends Struct.ComponentSchema {
     icon: 'stack';
   };
   attributes: {
+    image: Schema.Attribute.Media<'images'>;
     link: Schema.Attribute.String;
-    media: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     subtitle: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -117,6 +117,19 @@ export interface ElementsMedia extends Struct.ComponentSchema {
   };
 }
 
+export interface ElementsQuote extends Struct.ComponentSchema {
+  collectionName: 'components_elements_quotes';
+  info: {
+    displayName: 'Quote';
+    icon: 'message';
+  };
+  attributes: {
+    content: Schema.Attribute.Text & Schema.Attribute.Required;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -128,6 +141,7 @@ declare module '@strapi/strapi' {
       'elements.hero': ElementsHero;
       'elements.links': ElementsLinks;
       'elements.media': ElementsMedia;
+      'elements.quote': ElementsQuote;
     }
   }
 }
