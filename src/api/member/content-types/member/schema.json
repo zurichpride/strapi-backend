@@ -44,7 +44,7 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "Geschäftstelle",
+        "Geschäftsstelle",
         "Vorstand",
         "Organisationskomitee"
       ]
