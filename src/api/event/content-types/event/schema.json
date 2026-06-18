@@ -15,16 +15,6 @@
     }
   },
   "attributes": {
-    "slug": {
-      "type": "uid",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "targetField": "name",
-      "required": true
-    },
     "name": {
       "type": "string",
       "pluginOptions": {
@@ -33,6 +23,30 @@
         }
       },
       "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "targetField": "name",
+      "required": true,
+      "regex": "^[a-z0-9]+$"
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::eventcategory.eventcategory"
+    },
+    "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     },
     "start": {
       "type": "datetime",
@@ -50,13 +64,25 @@
         }
       }
     },
-    "description": {
+    "content": {
       "type": "blocks",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "media": {
       "type": "media",

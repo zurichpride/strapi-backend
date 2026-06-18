@@ -15,11 +15,6 @@
     }
   },
   "attributes": {
-    "slug": {
-      "type": "uid",
-      "targetField": "name",
-      "required": true
-    },
     "name": {
       "type": "string",
       "pluginOptions": {
@@ -29,13 +24,41 @@
       },
       "required": true
     },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true,
+      "regex": "^[a-z0-9]+$"
+    },
     "description": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": false
+    },
+    "content": {
       "type": "blocks",
       "pluginOptions": {
         "i18n": {
           "localized": true
         }
       }
+    },
+    "image": {
+      "type": "media",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "media": {
       "type": "media",
@@ -48,9 +71,9 @@
       "required": false,
       "allowedTypes": [
         "images",
-        "files",
         "videos",
-        "audios"
+        "audios",
+        "files"
       ]
     },
     "links": {

@@ -1,13 +1,13 @@
 {
   "kind": "collectionType",
-  "collectionName": "pages",
+  "collectionName": "eventcategories",
   "info": {
-    "singularName": "page",
-    "pluralName": "pages",
-    "displayName": "Page"
+    "singularName": "eventcategory",
+    "pluralName": "eventcategories",
+    "displayName": "Event Category"
   },
   "options": {
-    "draftAndPublish": true
+    "draftAndPublish": false
   },
   "pluginOptions": {
     "i18n": {
@@ -22,7 +22,8 @@
           "localized": true
         }
       },
-      "required": true
+      "required": true,
+      "unique": false
     },
     "slug": {
       "type": "uid",
@@ -42,23 +43,6 @@
           "localized": true
         }
       }
-    },
-    "content": {
-      "type": "dynamiczone",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "components": [
-        "elements.container",
-        "elements.hero",
-        "elements.embed",
-        "elements.box",
-        "elements.media",
-        "elements.grid"
-      ],
-      "required": false
     }
   }
 }
