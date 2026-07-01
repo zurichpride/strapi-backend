@@ -26,6 +26,11 @@
         "audios"
       ]
     },
+    "articles": {
+      "type": "component",
+      "component": "elements.article",
+      "repeatable": true
+    },
     "grid": {
       "type": "component",
       "component": "elements.grid",

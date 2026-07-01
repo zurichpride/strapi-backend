@@ -11,11 +11,6 @@
       "component": "elements.box",
       "repeatable": true
     },
-    "embeds": {
-      "type": "component",
-      "component": "elements.embed",
-      "repeatable": true
-    },
     "media": {
       "type": "component",
       "component": "elements.media",

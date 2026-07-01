@@ -728,6 +728,7 @@ export interface ApiPagePage extends Struct.CollectionTypeSchema {
         'elements.box',
         'elements.media',
         'elements.grid',
+        'elements.article',
       ]
     > &
       Schema.Attribute.SetPluginOptions<{

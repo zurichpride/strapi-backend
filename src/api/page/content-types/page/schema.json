@@ -56,7 +56,8 @@
         "elements.embed",
         "elements.box",
         "elements.media",
-        "elements.grid"
+        "elements.grid",
+        "elements.article"
       ],
       "required": false
     }

@@ -1,5 +1,20 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface ElementsArticle extends Struct.ComponentSchema {
+  collectionName: 'components_elements_articles';
+  info: {
+    displayName: 'Article';
+    icon: 'feather';
+  };
+  attributes: {
+    content: Schema.Attribute.Blocks;
+    link: Schema.Attribute.String;
+    media: Schema.Attribute.Media<'images' | 'videos'>;
+    subtitle: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ElementsBox extends Struct.ComponentSchema {
   collectionName: 'components_elements_boxes';
   info: {
@@ -33,6 +48,7 @@ export interface ElementsContainer extends Struct.ComponentSchema {
     icon: 'layout';
   };
   attributes: {
+    articles: Schema.Attribute.Component<'elements.article', true>;
     buttons: Schema.Attribute.Component<'elements.button', true>;
     content: Schema.Attribute.Blocks;
     grid: Schema.Attribute.Component<'elements.grid', false>;
@@ -64,7 +80,6 @@ export interface ElementsGrid extends Struct.ComponentSchema {
   };
   attributes: {
     boxes: Schema.Attribute.Component<'elements.box', true>;
-    embeds: Schema.Attribute.Component<'elements.embed', true>;
     media: Schema.Attribute.Component<'elements.media', true>;
   };
 }
@@ -133,6 +148,7 @@ export interface ElementsQuote extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'elements.article': ElementsArticle;
       'elements.box': ElementsBox;
       'elements.button': ElementsButton;
       'elements.container': ElementsContainer;
